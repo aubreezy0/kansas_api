@@ -24,8 +24,8 @@ ActiveRecord::Schema.define(version: 2019_06_02_161852) do
   end
 
   create_table "restaurants", force: :cascade do |t|
-    t.string "restaurant_name", null: false
-    t.string "cuisine", null: false
+    t.string "restaurant_name"
+    t.string "cuisine"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
