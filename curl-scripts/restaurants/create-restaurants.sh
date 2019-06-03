@@ -6,8 +6,9 @@ curl "http://localhost:4741/restaurants" \
   --header "Content-Type: application/json" \
   --header "Authorization: Token token=${TOKEN}" \
   --data '{
-    "example": {
-      "text": "'"${TEXT}"'"
+    "restaurant": {
+      "restaurant_name": "'"${NAME}"'",
+      "cuisine": "'"${CUISINE}"'"
     }
   }'
 
